@@ -98,7 +98,7 @@ pm2 logs vps-project-deploy
 pm2 ls
 ```
 
-# After Successfully Deploy follow this step
+# After Successfully Deploy for redeploy follow this step
 
 ```js
 git pull
