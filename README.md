@@ -98,24 +98,3 @@ pm2 logs vps-project-deploy
 pm2 ls
 ```
 
-# After Successfully Deploy for redeploy follow this step
-
-```js
-git pull
-```
-
-```js
-npm i
-```
-
-```js
-npm run build
-```
-
-```js
-pm2 ls
-```
-
-```js
-pm2 restart <id_no>
-```
