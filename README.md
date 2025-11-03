@@ -98,3 +98,5 @@ pm2 logs vps-project-deploy
 pm2 ls
 ```
 
+# After Successfully Deploy for redeploy follow this step
+
