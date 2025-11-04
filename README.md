@@ -100,3 +100,7 @@ pm2 ls
 
 # After Successfully Deploy for redeploy follow this step
 
+```js
+git pull
+```
+
