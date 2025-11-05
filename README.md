@@ -104,3 +104,7 @@ pm2 ls
 git pull
 ```
 
+```js
+npm i
+```
+
