@@ -108,3 +108,7 @@ git pull
 npm i
 ```
 
+```js
+npm run build
+```
+
