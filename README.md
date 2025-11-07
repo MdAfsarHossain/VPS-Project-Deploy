@@ -112,3 +112,10 @@ npm i
 npm run build
 ```
 
+```js
+pm2 ls
+```
+
+```js
+pm2 restart <id_no>
+```
