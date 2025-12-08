@@ -98,7 +98,7 @@ pm2 logs vps-project-deploy
 pm2 ls
 ```
 
-# After Successfully Deploy for redeploy follow this step
+# After Successfully Deploy for re-deploy follow this steps:
 
 ```js
 git pull
@@ -144,4 +144,75 @@ pm2 ls
 
 ```js
 pm2 restart <id_no>
+```
+
+# For Nginx Setup
+
+```js
+sudo apt install nginx -y
+```
+
+```js
+sudo systemctl enable nginx
+```
+
+```js
+sudo systemctl start nginx
+```
+
+```js
+sudo systemctl status nginx
+```
+
+```js
+sudo rm /etc/nginx/sites-enabled/default
+```
+
+```js
+sudo rm /etc/nginx/sites-available/default
+```
+
+```js
+sudo nano /etc/nginx/sites-available/api.voksa.app
+```
+
+```js
+server {
+    listen 80;
+    server_name api.voksa.app;
+
+    location / {
+        proxy_pass http://localhost:5008;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+}
+```
+
+```js
+sudo ln -s /etc/nginx/sites-available/api.voksa.app /etc/nginx/sites-enabled/
+```
+
+```js
+sudo nginx -t
+```
+
+```js
+sudo systemctl restart nginx
+```
+
+```js
+sudo apt install certbot python3-certbot-nginx -y
+```
+
+```js
+sudo certbot --nginx -d api.voksa.app
+```
+
+```js
+sudo certbot renew --dry-run
 ```
