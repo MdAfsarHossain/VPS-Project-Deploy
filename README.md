@@ -216,3 +216,7 @@ sudo certbot --nginx -d api.voksa.app
 ```js
 sudo certbot renew --dry-run
 ```
+
+#
+
+<img src="https://github.com/MdAfsarHossain/VPS-Project-Deploy/blob/main/stash.png" />
