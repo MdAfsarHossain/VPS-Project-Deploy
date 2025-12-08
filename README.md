@@ -119,3 +119,29 @@ pm2 ls
 ```js
 pm2 restart <id_no>
 ```
+
+## Git Switch
+
+```js
+git switch afsar/main
+```
+
+```js
+git pull
+```
+
+```js
+npm i
+```
+
+```js
+npm run build
+```
+
+```js
+pm2 ls
+```
+
+```js
+pm2 restart <id_no>
+```
