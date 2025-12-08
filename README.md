@@ -224,3 +224,7 @@ sudo certbot renew --dry-run
 ```js
 git stash
 ```
+
+```js
+git pull
+```
