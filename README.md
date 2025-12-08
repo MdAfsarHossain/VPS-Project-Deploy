@@ -217,6 +217,10 @@ sudo certbot --nginx -d api.voksa.app
 sudo certbot renew --dry-run
 ```
 
-#
+# If face local changes overwritten by merge.
 
 <img src="https://github.com/MdAfsarHossain/VPS-Project-Deploy/blob/main/stash.png" />
+
+```js
+git stash
+```
