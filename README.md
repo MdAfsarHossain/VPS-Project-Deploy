@@ -237,3 +237,5 @@ git pull
 
 # Delete Project from VPS
 
+#### Delete project from list
+
