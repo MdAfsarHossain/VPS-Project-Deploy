@@ -237,5 +237,9 @@ git pull
 
 # Delete Project from VPS
 
-#### Delete project from list
+#### Delete project from
+
+```js
+pm2 delete <id_no>
+```
 
