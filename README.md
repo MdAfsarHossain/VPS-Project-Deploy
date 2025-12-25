@@ -243,3 +243,5 @@ git pull
 pm2 delete <id_no>
 ```
 
+#### Delete project folder
+
