@@ -245,3 +245,6 @@ pm2 delete <id_no>
 
 #### Delete project folder
 
+```js
+rm -rf <project_name>
+```
