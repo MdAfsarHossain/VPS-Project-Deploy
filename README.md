@@ -234,3 +234,6 @@ git stash
 ```js
 git pull
 ```
+
+# Delete Project from VPS
+
