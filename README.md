@@ -248,3 +248,17 @@ pm2 delete <id_no>
 ```js
 rm -rf <project_name>
 ```
+
+#### Restart Nginx
+
+```js
+sudo nginx -t
+```
+
+```js
+systemctl restart nginx
+```
+
+```js
+sudo nginx -s reload
+```
